@@ -55,10 +55,10 @@ public class InGameHudMixin extends DrawableHelper {
         if (player.getMainArm() == Arm.LEFT) {
             // really strange people
             x = client.getWindow().getScaledWidth() / 2 + 105 - 8 + config.xOffset;
-            y = client.getWindow().getScaledHeight() - 13 + config.yOffset;
+            y = client.getWindow().getScaledHeight() - 15 + config.yOffset;
         } else {
             x = client.getWindow().getScaledWidth() / 2 - 105 + config.xOffset;
-            y = client.getWindow().getScaledHeight() - 13 + config.yOffset;
+            y = client.getWindow().getScaledHeight() - 15 + config.yOffset;
         }
         ItemStack offhand = player.getOffHandStack();
         if (!offhand.isEmpty()) {
