@@ -1,0 +1,7 @@
+{
+  "text.autoconfig.ffl-lock-indicator.option.enabled": "Enabled",
+  "text.autoconfig.ffl-lock-indicator.option.onlyWhenLocked": "Only show when locked",
+  "text.autoconfig.ffl-lock-indicator.option.xOffset": "X Offset",
+  "text.autoconfig.ffl-lock-indicator.option.yOffset": "Y Offset"
+
+}

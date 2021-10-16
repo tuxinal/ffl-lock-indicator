@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "ffl-lock-indicator",
+  "version": "${version}",
+
+  "name": "FFL lock indicator",
+  "description": "A mod that shows an icon when lock your elytra with FallFlyingLibrary",
+  "authors": [
+    "Tuxinal"
+  ],
+  "contact": {
+  },
+
+  "license": "MIT",
+  "icon": "assets/ffl-lock-indicator/icon.png",
+
+  "environment": "client",
+
+  "entrypoints":{
+    "client": [
+      "xyz.tuxinal.ffl_lock_indicator.Init"
+    ],
+    "modmenu": [
+      "xyz.tuxinal.ffl_lock_indicator.ModmenuInit"
+    ]
+  },
+  "mixins": [
+    "ffl-lock-indicator.mixins.json"
+  ],
+
+  "depends": {
+    "cloth-config": "5.0.*",
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16",
+    "fallflyinglib": ">=3.0.0-beta.2" 
+  },
+  "recommends": {
+    "modmenu": "2.0.*"
+  }
+}
