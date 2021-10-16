@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "FFL lock indicator",
-  "description": "A mod that shows an icon when lock your elytra with FallFlyingLibrary",
+  "description": "A mod that shows an icon when you lock your elytra with FallFlyingLibrary",
   "authors": [
     "Tuxinal"
   ],
