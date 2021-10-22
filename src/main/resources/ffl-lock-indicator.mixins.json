@@ -1,14 +1,12 @@
 {
-  "required": true,
-  "minVersion": "0.8",
-  "package": "xyz.tuxinal.ffl_lock_indicator.mixins",
-  "compatibilityLevel": "JAVA_16",
-  "mixins": [],
-  "client": [
-    "InGameHudMixin"
-  ],
-  "server": [],
-  "injectors": {
-    "defaultRequire": 1
-  }
+    "required": true,
+    "minVersion": "0.8",
+    "package": "xyz.tuxinal.ffl_lock_indicator.mixins",
+    "compatibilityLevel": "JAVA_16",
+    "mixins": [],
+    "client": ["InGameHudMixin"],
+    "server": [],
+    "injectors": {
+        "defaultRequire": 1
+    }
 }

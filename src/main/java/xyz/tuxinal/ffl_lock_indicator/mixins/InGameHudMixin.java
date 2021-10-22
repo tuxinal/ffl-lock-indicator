@@ -52,20 +52,22 @@ public class InGameHudMixin extends DrawableHelper {
         PlayerEntity player = getCameryEntity();
         int x;
         int y;
-        if (player.getMainArm() == Arm.LEFT) {
-            // really strange people
-            x = client.getWindow().getScaledWidth() / 2 + 105 - 8 + config.xOffset;
-            y = client.getWindow().getScaledHeight() - 15 + config.yOffset;
-        } else {
-            x = client.getWindow().getScaledWidth() / 2 - 105 + config.xOffset;
-            y = client.getWindow().getScaledHeight() - 15 + config.yOffset;
-        }
-        ItemStack offhand = player.getOffHandStack();
-        if (!offhand.isEmpty()) {
+        x = client.getWindow().getScaledWidth() / 2 - 105 + config.xOffset;
+        y = client.getWindow().getScaledHeight() - 15 + config.yOffset;
+        // For the sake of consistency don't react if user has set their own offset
+        if (config.xOffset == 0 && config.yOffset == 0){
             if (player.getMainArm() == Arm.LEFT) {
-                x += 29;
-            } else {
-                x -= 29;
+                // really strange people
+                x = client.getWindow().getScaledWidth() / 2 + 105 - 8 + config.xOffset;
+                y = client.getWindow().getScaledHeight() - 15 + config.yOffset;
+            }
+            ItemStack offhand = player.getOffHandStack();
+            if (!offhand.isEmpty()) {
+                if (player.getMainArm() == Arm.LEFT) {
+                    x += 29;
+                } else {
+                    x -= 29;
+                }
             }
         }
         RenderSystem.setShaderTexture(0, texture);
